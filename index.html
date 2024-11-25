@@ -13,14 +13,13 @@
 </head>
 <body>
   <header>
-
   </header>
 
   <main>
     <div class="container">
       <section>
         <h1>Calcola il prezzo del tuo biglietto</h1>
-        <div class="row">
+        <div class="row py-4">
           <div class="col">
             <span>Nome passeggero</span>
             <input class="form-control" placeholder="Inserisci il tuo nome e cognome" type="text" id="name-field"  />
@@ -37,39 +36,46 @@
               <option value="Adulto">Adulto</option>
               <option value="Young">Under 18</option>
               <option value="Senior">Over 65</option>
+            </select>
           </div>
         </div>
 
         <div class="row">
-          <button id="button" class="btn btn-primary ">Calcola</button>
-          <button id="button" class="btn btn-primary ">Cancella</button>          
-        </div>
+          <div class="col bg-danger col-md-4 d-flex justify-content-between mx-auto">
+            <button class="btn bg-light mx-auto">Calcola</button>
+            <button class="btn bg-light mx-auto">Cancella</button>
+          </div>
+
 
       </section>
 
-      <section>
-      <!-- Creo la sezione con il risultato, di default d-none -->
-      <h1>Il tuo Biglietto</h1>
-      <div class="row">
-        <div class="col">
-          <h2>Passeggero</h2>
-          <span id="full-name"></span>
-        </div>
-        <div class="col">
-          <h2>Offerta</h2>
-        </div>
-        <div class="col">
-          <h2>Carrozza</h2>
-        </div>
-        <div class="col">
-          <h2>Costo biglietto</h2>
-        </div>
+       <section>
 
-      </div>        
-      </section>
-     
+        <h1>Il tuo Biglietto</h1>
+        <div class="row">
+          <div class="col">
+            <h2>Passeggero</h2>
+            <span id="full-name"></span>
+          </div>
+          <div class="col">
+            <h2>Offerta</h2>
+            <span id="category"></span>
+          </div>
+          <div class="col">
+            <h2>Carrozza</h2>
+            <span id="n-train"></span>
+          </div>
+          <div class="col">
+            <h2>Costo biglietto</h2>
+            <span id="final-price"></span>
+          </div>
+
+        </div>        
+      </section> 
 
     </div>
+
+    
   </main>
 
   <footer>
