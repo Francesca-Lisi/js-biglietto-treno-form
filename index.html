@@ -17,11 +17,63 @@
   </header>
 
   <main>
+    <div class="container">
+      <section>
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="row">
+          <div class="col">
+            <span>Nome passeggero</span>
+            <input class="form-control" placeholder="Inserisci il tuo nome e cognome" type="text" id="name-field"  />
+          </div>
 
+          <div class="col">
+            <span>Km da percorrere</span>
+            <input class="form-control" placeholder="Numero di km" type="number" id="name-field"  />
+          </div>
+
+          <div class="col">
+            <span>Fascia d'età</span>
+            <select id="title-field" class="form-select">
+              <option value="Adulto">Adulto</option>
+              <option value="Young">Under 18</option>
+              <option value="Senior">Over 65</option>
+          </div>
+        </div>
+
+        <div class="row">
+          <button id="button" class="btn btn-primary ">Calcola</button>
+          <button id="button" class="btn btn-primary ">Cancella</button>          
+        </div>
+
+      </section>
+
+      <section>
+      <!-- Creo la sezione con il risultato, di default d-none -->
+      <h1>Il tuo Biglietto</h1>
+      <div class="row">
+        <div class="col">
+          <h2>Passeggero</h2>
+          <span id="full-name"></span>
+        </div>
+        <div class="col">
+          <h2>Offerta</h2>
+        </div>
+        <div class="col">
+          <h2>Carrozza</h2>
+        </div>
+        <div class="col">
+          <h2>Costo biglietto</h2>
+        </div>
+
+      </div>        
+      </section>
+     
+
+    </div>
   </main>
 
   <footer>
-    
+
   </footer>
   <script src="script.js"></script>
 </body>
