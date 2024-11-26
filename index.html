@@ -19,37 +19,40 @@
     <div class="container">
       <section>
         <h1>Calcola il prezzo del tuo biglietto</h1>
-        <div class="row py-4">
-          <div class="col">
-            <span>Nome passeggero</span>
-            <input class="form-control" placeholder="Inserisci il tuo nome e cognome" type="text" id="name-field"  />
+        <form action="#">
+          <div class="row py-4">
+            <div class="col">
+              <span>Nome passeggero</span>
+              <input class="form-control" placeholder="Inserisci il tuo nome e cognome" type="text" id="name-field"  />
+            </div>
+
+            <div class="col">
+              <span>Km da percorrere</span>
+              <input class="form-control" placeholder="Numero di km" type="number" id="km-field"  />
+            </div>
+
+            <div class="col">
+              <span>Fascia d'età</span>
+              <select id="offer-field" class="form-select">
+                <option value="Adulto">Adulto</option>
+                <option value="Young">Under 18</option>
+                <option value="Senior">Over 65</option>
+              </select>
+            </div>
           </div>
 
-          <div class="col">
-            <span>Km da percorrere</span>
-            <input class="form-control" placeholder="Numero di km" type="number" id="name-field"  />
+          <div class="row">
+            <div class="col bg-danger col-md-4 d-flex justify-content-between mx-auto">
+              <button type="submit" class="btn bg-light mx-auto">Calcola</button>
+              <button id="cancel" class="btn bg-light mx-auto">Cancella</button>
+            </div>
           </div>
 
-          <div class="col">
-            <span>Fascia d'età</span>
-            <select id="title-field" class="form-select">
-              <option value="Adulto">Adulto</option>
-              <option value="Young">Under 18</option>
-              <option value="Senior">Over 65</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col bg-danger col-md-4 d-flex justify-content-between mx-auto">
-            <button class="btn bg-light mx-auto">Calcola</button>
-            <button class="btn bg-light mx-auto">Cancella</button>
-          </div>
-
+        </form>
 
       </section>
 
-       <section>
+      <section>
 
         <h1>Il tuo Biglietto</h1>
         <div class="row">
@@ -67,7 +70,7 @@
           </div>
           <div class="col">
             <h2>Costo biglietto</h2>
-            <span id="final-price"></span>
+            <span id="price"></span>
           </div>
 
         </div>        
